@@ -3,6 +3,7 @@
 
 #include<stdio.h>
 
+// Function to swap 2 values using third pointer
 void swap(int *a, int *b){
     int t;
     t = *a;
@@ -10,6 +11,7 @@ void swap(int *a, int *b){
     *b = t;
 }
 
+// function to sort the array
 void sort(int *arr){
     for (int i = 0; i < 5; i++)
     {
@@ -19,15 +21,17 @@ void sort(int *arr){
     }
 }
 
+// main funciton
 int main(){
 
+    // declare array of size 6
     int arr[6] = {12, 21, 34, 64, 76, 2};
     int k;
 
 
     printf("Enter Value which you want to find Min and Max : ");
     scanf("%d", &k);
-    sort(arr);
+    sort(arr);  // sort the array
     printf("Sorted Array is...\n");
     for (int i = 0; i < 6; i++)
     {
